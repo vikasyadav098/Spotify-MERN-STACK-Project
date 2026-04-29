@@ -10,8 +10,9 @@ const App = () => {
 
   // dont show sidebar navbar and player on these pages
   const hideLayout = location.pathname === '/login' || 
-                     location.pathname === '/register' ||
-                     location.pathname === '/artist/dashboard'
+location.pathname === '/register' ||
+   location.pathname === '/artist/dashboard' ||
+   location.pathname==='/artist/upload'
 
   return (
     // main wrapper, flex so sidebar and content sit side by side
