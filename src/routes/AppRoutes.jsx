@@ -6,6 +6,7 @@ import Login from '../pages/Login'
 import Register from '../pages/Register'
 import ProtectedRoute from './ProtectedRoute'
 import Dashboard from '../pages/Dashboard'
+import UploadSong from '../pages/UploadSong'
 
 const AppRoutes = () => {
   return (
@@ -29,6 +30,13 @@ const AppRoutes = () => {
         <Route path='/artist/dashboard' element={
           <ProtectedRoute allowedRole="artist">
             <Dashboard />
+          </ProtectedRoute>
+        } />
+
+        {/* artist upload song route */}
+        <Route path='/artist/upload' element={
+          <ProtectedRoute allowedRole="artist">
+            <UploadSong />
           </ProtectedRoute>
         } />
 
