@@ -36,7 +36,7 @@ export default function ArtistDashboard() {
     fetchData();
   }, []);
 
-  // clear everything and go back to login
+  // clear everything and go back to login.
   const handleLogout = () => {
     localStorage.clear();
     navigate('/login');
